@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+h1{
+    color: hsl(212, 21%, 14%);
+    margin-top: -20px;
+    width: 200px;
+    font-family: 'Fraunces', sans-serif;
+}
+
+h2, p{
+    color: hsl(228, 12%, 48%);
+}
+
+h2{
+    margin-top: 20px;;
+    letter-spacing: 3px;
+}
+
+p{
+    width: 200px;
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.price-box{
+    margin-top: -20px;
+}
+
+span:first-of-type{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+
+span:nth-of-type(2){
+    vertical-align: top;
+    text-decoration: line-through;
+}
+
+.product-card-container{
+    width: 500px;
+    margin: 150px auto;
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+@media (max-width: 500px) {
+    .product-card-container{
+        flex-direction: column;
+        width: 400px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    img{
+        background: url(./images/image-product-mobile.jpg);
+        height: 400px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    h1{
+        margin-top: 10px;
+        width:  100%;
+    }
+
+    p{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .price-box{
+        margin-top: 10px;
+    }
+
+    a{
+        margin-top: 10px;
+    }
+}
